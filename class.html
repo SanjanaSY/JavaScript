@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Class of JS</title>
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+
+<!--table starts-->
+<div class="container">
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+    	<th scope="col">Name</th>
+    	<th scope="col">Roll NO</th>
+    	<th scope="col">Stream</th>
+    	<th scope="col">Age</th>
+    	<th scope="col">Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="one"></th>
+      <th id="one1"></th>
+      <th id="one2"></th>
+      <th id="one3"></th>
+      <th id="one4"></th>
+    </tr>
+    <tr>
+      <th id="two"></th> 
+      <th id="two1"></th>
+      <th id="two2"></th>
+      <th id="two3"></th>
+      <th id="two4"></th>     
+      
+    </tr>
+    <tr>
+      <th id="three"></th> 
+      <th id="three1"></th> 
+      <th id="three2"></th> 
+      <th id="three3"></th> 
+      <th id="three4"></th> 
+    </tr>
+    <tr>
+      <th id="four"></th>
+      <th id="four1"></th>
+      <th id="four2"></th>
+      <th id="four3"></th>
+      <th id="four4"></th>
+    </tr>
+    <tr>
+      <th id="five"></th>
+      <th id="five1"></th>
+      <th id="five2"></th>
+      <th id="five3"></th>
+      <th id="five4"></th>
+    </tr>
+    <tr>
+      <th id="six"></th>
+      <th id="six1"></th>
+      <th id="six2"></th>
+      <th id="six3"></th>
+      <th id="six4"></th>
+    </tr>
+    <tr>
+      <th id="seven"></th>
+      <th id="seven1"></th>
+      <th id="seven2"></th>
+      <th id="seven3"></th>
+      <th id="seven4"></th>
+    </tr>
+    <tr>
+      <th id="eight"></th>
+      <th id="eight1"></th>
+      <th id="eight2"></th>
+      <th id="eight3"></th>
+      <th id="eight4"></th>
+    </tr>
+    <tr>
+      <th id="nine"></th>
+      <th id="nine1"></th>
+      <th id="nine2"></th>
+      <th id="nine3"></th>
+      <th id="nine4"></th>
+    </tr>
+    <tr>
+      <th id="ten"></th>
+      <th id="ten1"></th>
+      <th id="ten2"></th>
+      <th id="ten3"></th>
+      <th id="ten4"></th>
+    </tr>
+    <tr>
+      <th id="eleven"></th>
+      <th id="eleven1"></th>
+      <th id="eleven2"></th>
+      <th id="eleven3"></th>
+      <th id="eleven4"></th>
+    </tr>
+    <tr>
+      <th id="twelve"></th>
+      <th id="twelve1"></th>
+      <th id="twelve2"></th>
+      <th id="twelve3"></th>
+      <th id="twelve4"></th>
+    </tr>
+    <tr>
+      <th id="thirteen"></th>
+      <th id="thirteen1"></th>
+      <th id="thirteen2"></th>
+      <th id="thirteen3"></th>
+      <th id="thirteen4"></th>
+    </tr>
+    <tr>
+      <th id="fourteen"></th>
+      <th id="fourteen1"></th>
+      <th id="fourteen2"></th>
+      <th id="fourteen3"></th>
+      <th id="fourteen4"></th>
+    </tr>
+    <tr>
+      <th id="fifteen"></th>
+      <th id="fifteen1"></th>
+      <th id="fifteen2"></th>
+      <th id="fifteen3"></th>
+      <th id="fifteen4"></th>
+    </tr>
+	</tbody>
+</table>
+</div>
+
+<!--table ends-->
+
+
+	<h1 id="one"></h1>
+	<script type="text/javascript">
+		class student
+		{
+			constructor(name,rollNo,stream,age,gender)
+			{
+				this.name = name;
+				this.rollNo = rollNo;
+				this.stream = stream;
+				this.age = age;
+				this.gender = gender;
+
+			}
+		}
+
+		const student1 = new student ("Sanjana",49,"BCA",20,"Female")
+		const student2 = new student ("Ankit",21,"Civils",25,"Male")
+		const student3 = new student ("Veeresh",27,"BCA",19,"Male")
+		const student4 = new student ("Amit",30,"Electrical",19,"Male")
+		const student5 = new student ("Anjali",31,"Nursing",21,"Female")
+		const student6 = new student ("Sahana",56,"Science",18,"Female")
+		const student7 = new student ("Sakshi",47,"Science",19,"Female")
+		const student8 = new student ("Suchitra",66,"BCOM",21,"Female")
+		const student9 = new student ("Darshan",60,"BCOM",28,"Male")
+		const student10 = new student ("Vaish",16,"Nursing",21,"Female")
+		const student11 = new student ("Sanvi",15,"BBA",20,"Female")
+		const student12 = new student ("Sneha",45,"BCA",25,"Female")
+		const student13 = new student ("Kavya",40,"Electronics",30,"Female")
+		const student14 = new student ("Vinod",39,"BCOM",20,"Male")
+		const student15 = new student ("Ashwini",34,"BCA",28,"Female")
+
+
+		document.getElementById('one').innerHTML= student1.name;
+		document.getElementById('one1').innerHTML= student1.rollNo;
+		document.getElementById('one2').innerHTML= student1.stream;
+		document.getElementById('one3').innerHTML= student1.age;
+		document.getElementById('one4').innerHTML= student1.gender;
+
+		document.getElementById('two').innerHTML= student2.name;
+		document.getElementById('two1').innerHTML= student2.rollNo;
+		document.getElementById('two2').innerHTML= student2.stream;
+		document.getElementById('two3').innerHTML= student2.age;
+		document.getElementById('two4').innerHTML= student2.gender;
+
+		document.getElementById('three').innerHTML= student3.name;
+		document.getElementById('three1').innerHTML= student3.rollNo;
+		document.getElementById('three2').innerHTML= student3.stream;
+		document.getElementById('three3').innerHTML= student3.age;
+		document.getElementById('three4').innerHTML= student3.gender;
+
+		document.getElementById('four').innerHTML= student4.name;
+		document.getElementById('four1').innerHTML= student4.rollNo;
+		document.getElementById('four2').innerHTML= student4.stream;
+		document.getElementById('four3').innerHTML= student4.age;
+		document.getElementById('four4').innerHTML= student4.gender;
+
+		document.getElementById('five').innerHTML= student5.name;
+		document.getElementById('five1').innerHTML= student5.rollNo;
+		document.getElementById('five2').innerHTML= student5.stream;
+		document.getElementById('five3').innerHTML= student5.age;
+		document.getElementById('five4').innerHTML= student5.gender;
+
+		document.getElementById('six').innerHTML= student6.name;
+		document.getElementById('six1').innerHTML= student6.rollNo;
+		document.getElementById('six2').innerHTML= student6.stream;
+		document.getElementById('six3').innerHTML= student6.age;
+		document.getElementById('six4').innerHTML= student6.gender;
+
+		document.getElementById('seven').innerHTML= student7.name;
+		document.getElementById('seven1').innerHTML= student7.rollNo;
+		document.getElementById('seven2').innerHTML= student7.stream;
+		document.getElementById('seven3').innerHTML= student7.age;
+		document.getElementById('seven4').innerHTML= student7.gender;
+
+		document.getElementById('eight').innerHTML= student8.name;
+		document.getElementById('eight1').innerHTML= student8.rollNo;
+		document.getElementById('eight2').innerHTML= student8.stream;
+		document.getElementById('eight3').innerHTML= student8.age;
+		document.getElementById('eight4').innerHTML= student8.gender;
+
+		document.getElementById('nine').innerHTML= student9.name;
+		document.getElementById('nine1').innerHTML= student9.rollNo;
+		document.getElementById('nine2').innerHTML= student9.stream;
+		document.getElementById('nine3').innerHTML= student9.age;
+		document.getElementById('nine4').innerHTML= student9.gender;
+
+		document.getElementById('ten').innerHTML= student10.name;
+		document.getElementById('ten1').innerHTML= student10.rollNo;
+		document.getElementById('ten2').innerHTML= student10.stream;
+		document.getElementById('ten3').innerHTML= student10.age;
+		document.getElementById('ten4').innerHTML= student10.gender;
+
+		document.getElementById('eleven').innerHTML= student11.name;
+		document.getElementById('eleven1').innerHTML= student11.rollNo;
+		document.getElementById('eleven2').innerHTML= student11.stream;
+		document.getElementById('eleven3').innerHTML= student11.age;
+		document.getElementById('eleven4').innerHTML= student11.gender;
+
+		document.getElementById('twelve').innerHTML= student12.name;
+		document.getElementById('twelve1').innerHTML= student12.rollNo;
+		document.getElementById('twelve2').innerHTML= student12.stream;
+		document.getElementById('twelve3').innerHTML= student12.age;
+		document.getElementById('twelve4').innerHTML= student12.gender;
+
+		document.getElementById('thirteen').innerHTML= student13.name;
+		document.getElementById('thirteen1').innerHTML= student13.rollNo;
+		document.getElementById('thirteen2').innerHTML= student13.stream;
+		document.getElementById('thirteen3').innerHTML= student13.age;
+		document.getElementById('thirteen4').innerHTML= student13.gender;
+
+		document.getElementById('fourteen').innerHTML= student14.name;
+		document.getElementById('fourteen1').innerHTML= student14.rollNo;
+		document.getElementById('fourteen2').innerHTML= student14.stream;
+		document.getElementById('fourteen3').innerHTML= student14.age;
+		document.getElementById('fourteen4').innerHTML= student14.gender;
+
+		document.getElementById('fifteen').innerHTML= student15.name;
+		document.getElementById('fifteen1').innerHTML= student15.rollNo;
+		document.getElementById('fifteen2').innerHTML= student15.stream;
+		document.getElementById('fifteen3').innerHTML= student15.age;
+		document.getElementById('fifteen4').innerHTML= student15.gender;
+
+
+	</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

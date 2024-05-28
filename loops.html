@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loops in JS</title>
+</head>
+<body>
+
+	<h2>JavaScript For Loop</h2>
+	<p id="loop"></p>
+	<script type="text/javascript">
+		const laptops=["HP","Dell","Lenovo","Mac"];
+		let text="";
+		for (let i = 0; i<laptops.length;i++)
+		 {
+			text += laptops[i] + "<br>";
+		}
+		document.getElementById('loop').innerHTML=text;
+	</script>
+	
+
+	<p id="loop1"></p>
+    <script type="text/javascript">
+    	let a="";
+    	for(let i=0; i<5; i++)
+    	{
+    		a += "The number is " + i + "<br>";
+       	}
+       	document.getElementById('loop1').innerHTML=a;
+	</script>
+
+
+	<h2>JavaScript while Loop</h2>
+	<p id="loop2"></p>
+	<script type="text/javascript">
+		let b="";
+		let i=0;
+		while(i<10)
+		{
+			b += "The number is " + i + "<br>";
+			i++;
+		}
+		document.getElementById('loop2').innerHTML=b;
+	</script>
+
+
+	<h2>JavaScript Do While Loop</h2>
+	<p id="loop3"></p>
+	<script>
+	let d = "";
+	let c = 11;
+	do {
+  		d += "<br>The number is " + c;
+  		c++;
+	}
+	while (c < 20);  
+	document.getElementById("loop3").innerHTML = d;
+	</script>
+
+
+	<h2>JavaScript Loop on break statement</h2>
+	<p id="loop4"></p>
+	<script>
+	let f = "";
+	for (let i = 0; i < 10; i++) 
+	{
+  		if (i === 7) { break; }
+  		f += "The number is " + i + "<br>";
+	}
+	document.getElementById("loop4").innerHTML = f;
+	</script>
+
+	<p id="loop6"></p>
+	<script type="text/javascript">
+		const fruits = ["apple","mango","cherry","orange"];
+		let h = "";
+		list:{
+			h += fruits[0] + "<br>";
+			h += fruits[1] + "<br>";
+			break list;
+			h += fruits[2] + "<br>";
+			h += fruits[3] + "<br>";
+		}
+		document.getElementById("loop6").innerHTML = h;
+	</script>
+
+
+	<h2>JavaScript Loop on continue statement</h2>
+	<p id="loop5"></p>
+	<script>
+	let g = "";
+	for (let i = 0; i < 10; i++) {
+  	if (i === 3) { continue; }
+  		g += "The number is " + i + "<br>";
+	}
+	document.getElementById("loop5").innerHTML = g;
+	</script>
+
+
+
+</body>
+</html>

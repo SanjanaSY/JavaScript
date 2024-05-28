@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		table,td,tr,th
+		{
+			border: 1px solid black;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<table>
+		<tr>
+		<th>Array A</th>
+		</tr>
+		  <tr>
+			  <td id="in1"></td>
+		   </tr>
+		   <tr>
+			  <td id="in2"></td>
+		   </tr>
+		   <tr>
+			  <td id="in3"></td>
+		   </tr>
+		   <tr>
+			  <td id="in4"></td>
+		   </tr>
+	</table>
+
+	<script type="text/javascript">
+		const s=[10,true,"sanj","innoovatum",100,false];
+		document.getElementById('in1').innerHTML=s[0];
+		document.getElementById('in2').innerHTML=s[1];
+		document.getElementById('in3').innerHTML=s[2];
+		document.getElementById('in4').innerHTML=s[3];
+		document.getElementById('in5').innerHTML=s[4];
+		document.getElementById('in6').innerHTML=s[5];
+	</script>
+
+<!--with id-->
+
+	<!-- output with particular element using document.getElementById and all elements using document.write-->
+
+	<h1 id="one"></h1>
+	<script type="text/javascript">
+		let a=[10,2,3];
+		document.getElementById('one').innerHTML=a[0];
+		document.write(a);
+	</script>
+
+	<!-- output with particular element using document.getElementById and all elements using document.write-->
+
+	<h1 id="two"></h1>
+	<script type="text/javascript">
+		let b=["sanjana",13,"hi",6];
+		document.getElementById('two').innerHTML=b;
+	</script>
+<!--with id-->
+
+<!--without id-->
+	
+	<script type="text/javascript">
+		const c=[];
+		c[0]="car";
+		c[1]="bike";
+		c[2]="cycle";
+		document.write(c);
+	</script>
+	<br><br><br>
+
+	<!--script type="text/javascript">
+		const d=new Array["car","bike","cycle"];
+		document.write(d);
+	script-->
+
+	<script type="text/javascript">
+		const e=["apple","mango","orange"];
+		e[0]="cherry"
+		document.write(e)
+	</script>
+	<br><br><br>
+
+	<script type="text/javascript">
+		const f= {firstName:"sanjana", lastName:"yadawad", age:20};
+		document.write(f.firstName)
+	</script>
+	<br><br><br>
+	
+	<script type="text/javascript">
+		const g= ["Banana", "Orange", "Apple", "Mango"];
+		let size=g.length;
+		document.write(size)
+	</script>
+	<br><br><br>
+<!--without id-->
+</body>
+</html>

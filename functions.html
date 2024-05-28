@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions in JS</title>
+</head>
+<body>
+
+	<h1 id="one"></h1>
+	<script type="text/javascript">
+		function add()
+		{
+			return 2+3;
+		}
+		document.getElementById('one').innerHTML=add();
+	</script>
+
+
+	<h1 id="two"></h1>
+	<h1 id="three"></h1>
+	<h1 id="four"></h1>
+	<h1 id="five"></h1>
+	<script type="text/javascript">
+		function add(x,y)
+		{
+			return x + y;
+		}
+
+		let a= add(50,30);
+		let b= add(70,80);
+		let c= add(100,80);
+		let d= add(140,20);
+
+		document.getElementById('two').innerHTML= a;
+		document.getElementById('three').innerHTML= b;
+		document.getElementById('four').innerHTML= c;
+		document.getElementById('five').innerHTML= d;
+	</script>
+
+	<h1 id="six"></h1>
+	<h1 id="seven"></h1>
+	<script type="text/javascript">
+		function sub(x,y)
+		{
+			return x + y;
+		}
+		let e= sub(50,30);
+		let f= sub(70,80);
+
+		document.getElementById('six').innerHTML= e;
+		document.getElementById('seven').innerHTML= f;
+	</script>
+</body>
+</html>

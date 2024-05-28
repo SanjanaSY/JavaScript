@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form of JavaScript</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+	<center><h1>Appication Form</h1></center>
+	<br><br>
+
+	<div class="container">
+	<form class="row g-3">
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationDefault03"  required>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationDefault03"  required>
+  </div>
+  <br><br>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Father name</label>
+    <input type="text" class="form-control" id="validationDefault03" required>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Mother name</label>
+    <input type="text" class="form-control" id="validationDefault03" required>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Date of birth</label>
+    <input type="date" class="form-control" id="validationDefault03" required>
+  </div>
+  
+
+  <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<label for="inputPassword5" class="form-label">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</div>
+
+   <label>Gender</label>
+   <div class="form-check">
+   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+   <label class="form-check-label" for="flexRadioDefault1">
+    Male
+   </label>
+   </div>
+	<div class="form-check">
+  	<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  	<label class="form-check-label" for="flexRadioDefault2">
+    Female  </label>
+	</div>
+
+    
+
+
+   <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Address</label>
+    <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+
+    <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">Phone number</label>
+    <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+  </div>
+
+
+</form>
+
+<!--pratice part
+	<center>
+	<form action="">
+		<label>Name :</label> <br><br>
+		<input type="text" name=""><br><br>
+		<label>Message :</label><br><br>
+		<textarea>Write message</textarea><br><br>
+		<label>State :</label><br><br>
+		<select>
+			<option>--select--</option>
+			<option>Karnataka</option>
+			<option>Tamil nadu</option>
+			<option>Maharshtra</option>
+		</select><br><br>
+		<input type="reset" name="">
+		<button type="submit">Submit</button>
+	</form>
+	</center>
+-->
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

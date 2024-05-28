@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Datatpye</title>
+</head>
+<body>
+
+	<h2>JavaScript Strings</h2>
+	<p id="one"></p>
+	<script>
+	let color1 = "orange";
+	let color2 = 'yellow';
+	document.getElementById("one").innerHTML =
+	color1 + "<br>" + 
+	color2; 
+	</script>
+
+
+	<h2>JavaScript Numbers</h2>
+	<p id="two"></p>
+	<script>
+	let x1 = 34.00;
+	let x2 = 34;
+	let x3 = 3.14;
+	document.getElementById("two").innerHTML =
+	x1 + "<br>" + x2 + "<br>" + x3;
+	</script>
+
+
+	<h1>JavScript Bigint</h1>
+    <p>A BigInt can not have decimals.</p>
+	<p id="three"></p>
+	<script>
+    let x = BigInt("123456789012345678901234567890");
+    document.getElementById("three").innerHTML = x; 
+    </script>
+
+
+    <h2>JavaScript Booleans</h2>
+	<p>Booleans can have two values: true or false:</p>
+	<p id="four"></p>
+	<script>
+	let w = 5;
+	let y = 5;
+	let z = 6;
+	document.getElementById("four").innerHTML =
+	(w == y) + "<br>" + (w == z);
+	</script>
+
+
+	<h2>JavaScript Arrays</h2>
+	<p>Array indexes are zero-based, which means the first item is [0].</p>
+	<p id="five"></p>
+	<script>
+	const cars = ["Saab","Volvo","BMW"];
+	document.getElementById("five").innerHTML = cars[0];
+	</script>
+
+
+	<h2>JavaScript Objects</h2>
+	<p id="six"></p>
+	<script>
+	const person = {
+  	firstName : "sanjana",
+  	lastName  : "yadawad",
+  	age     : 20,
+  	eyeColor  : "black"
+	};
+	document.getElementById("six").innerHTML =
+	person.firstName + " is " + person.age + " years old.";
+	</script>
+
+
+	<h1>JavaScript Operators</h1>
+	<h2>The typeof Operator</h2>
+	<p id="seven"></p>
+	<script>
+	document.getElementById("seven").innerHTML = 
+	typeof 13 + "<br>" +
+	typeof "deepi" + "<br>" + 
+	typeof "kriti";
+	</script>
+
+
+	<h2>JavaScript empty value</h2>
+	<p>An empty string has both a legal value and a type:</p>
+	<p id="eight"></p>
+	<script>
+	let car = "";
+	document.getElementById("eight").innerHTML =
+	"The value is: " +
+	car + "<br>" +
+	"The type is: " + typeof car;
+	</script>
+
+
+
+
+
+
+</body>
+</html>
